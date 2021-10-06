@@ -8,6 +8,10 @@ void main() {
   });
   int a = input[0];
   int b = input[1];
-  int res = a*a+b*b;
-  print(res);
+  int k = 0;
+  while (a - b>0) {
+    a = a - b;
+    k +=1;
+  }
+  print("$k $a");
 }
